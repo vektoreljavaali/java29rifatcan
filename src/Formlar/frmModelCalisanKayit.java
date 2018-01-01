@@ -111,7 +111,7 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
                             .addComponent(txttckimlik)
                             .addComponent(txtadi)
                             .addComponent(txtsoyadi)
-                            .addComponent(txttelefon, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                            .addComponent(txttelefon, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
                             .addComponent(jScrollPane1)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)

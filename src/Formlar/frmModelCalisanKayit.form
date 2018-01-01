@@ -42,8 +42,8 @@
                           <Component id="txttckimlik" max="32767" attributes="0"/>
                           <Component id="txtadi" max="32767" attributes="0"/>
                           <Component id="txtsoyadi" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txttelefon" pref="111" max="32767" attributes="0"/>
-                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          <Component id="txttelefon" pref="262" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
