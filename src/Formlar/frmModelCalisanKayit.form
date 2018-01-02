@@ -46,22 +46,24 @@
                           <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="btnyenikayit" min="-2" pref="107" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnkayit" min="-2" pref="107" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btngeri" min="-2" pref="107" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnileri" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="btncikis" min="-2" pref="107" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="btnyenikayit" min="-2" pref="107" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnkayit" min="-2" pref="107" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btngeri" min="-2" pref="107" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnileri" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnduzenle" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnsil" min="-2" pref="107" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="btncikis" min="-2" pref="107" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -99,10 +101,12 @@
                   <Component id="btnkayit" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btngeri" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnileri" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnduzenle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnsil" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="btncikis" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="btncikis" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -207,6 +211,22 @@
           <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\cikis.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnduzenle">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\d&#xfc;zenle.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="D&#xfc;zenle"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnsil">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\sil.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Sil"/>
       </Properties>
     </Component>
   </SubComponents>
