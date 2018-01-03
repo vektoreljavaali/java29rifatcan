@@ -5,12 +5,18 @@
  */
 package Formlar;
 
+import Modeller.ModelCalisanKayit;
+import java.util.ArrayList;
+
 /**
  *
  * @author rbarka
  */
 public class frmModelCalisanKayit extends javax.swing.JFrame {
-
+    
+    ArrayList<Modeller.ModelCalisanKayit> ck = new ArrayList<>();
+    Modeller.ModelCalisanKayit tmpcalisankayit;
+    int sayac=0;
     /**
      * Creates new form frmModelCalisanKayit
      */
@@ -46,7 +52,7 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
         btnduzenle = new javax.swing.JButton();
         btnsil = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("ÇALIŞAN KAYIT FORMU");
 
         jLabel1.setText("T.C Kimlik No");
@@ -80,18 +86,43 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
 
         btnyenikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\yenikayit.png")); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnyenikayitActionPerformed(evt);
+            }
+        });
 
         btnkayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
         btnkayit.setText("Kayıt");
+        btnkayit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkayitActionPerformed(evt);
+            }
+        });
 
         btngeri.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\geri_.png")); // NOI18N
         btngeri.setText("<<< Geri");
+        btngeri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btngeriActionPerformed(evt);
+            }
+        });
 
         btnileri.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\ileri.png")); // NOI18N
         btnileri.setText("İleri >>>");
+        btnileri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnileriActionPerformed(evt);
+            }
+        });
 
         btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncikisActionPerformed(evt);
+            }
+        });
 
         btnduzenle.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\düzenle.png")); // NOI18N
         btnduzenle.setText("Düzenle");
@@ -175,6 +206,71 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
+        btnyenikayit.setEnabled(false);
+        btnkayit.setEnabled(true);
+        btnduzenle.setEnabled(false);
+        btncikis.setEnabled(false);
+        btngeri.setEnabled(false);
+        btnileri.setEnabled(false);
+        btnsil.setEnabled(false);
+        
+        txtadi.setText("");
+        txtadres.setText("");
+        txtsoyadi.setText("");
+        txttckimlik.setText("");
+        txttelefon.setText("");
+    }//GEN-LAST:event_btnyenikayitActionPerformed
+
+    private void btnkayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkayitActionPerformed
+        tmpcalisankayit = new ModelCalisanKayit();
+         
+        tmpcalisankayit.setCalisanadi(txtadi.getText());
+        tmpcalisankayit.setCalisanadres(txtadres.getText());
+        tmpcalisankayit.setCalisansoyadi(txtsoyadi.getText());
+        tmpcalisankayit.setCalisantckimlik(txttckimlik.getText());
+        tmpcalisankayit.setCalisantelefon(txttelefon.getText());
+        
+        btnyenikayit.setEnabled(true);
+        btnkayit.setEnabled(false);
+        btnduzenle.setEnabled(true);
+        btncikis.setEnabled(true);
+        btngeri.setEnabled(true);
+        btnileri.setEnabled(true);
+        btnsil.setEnabled(true);
+        
+        txtadi.setText("");
+        txtadres.setText("");
+        txtsoyadi.setText("");
+        txttckimlik.setText("");
+        txttelefon.setText("");
+    }//GEN-LAST:event_btnkayitActionPerformed
+
+    private void btngeriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngeriActionPerformed
+        if(sayac !=0 )
+           sayac--;
+        
+        txttckimlik.setText(ck.get(0).getCalisanadi());
+        txtadi.setText(ck.get(0).getCalisanadi());
+        txtsoyadi.setText(ck.get(0).getCalisansoyadi());
+        txttelefon.setText(ck.get(0).getCalisantelefon());
+        
+    }//GEN-LAST:event_btngeriActionPerformed
+
+    private void btnileriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnileriActionPerformed
+        if(sayac !=ck.size()-1)
+           sayac++;
+        
+        txttckimlik.setText(ck.get(sayac).getCalisanadi());
+        txtadi.setText(ck.get(sayac).getCalisanadi());
+        txtsoyadi.setText(ck.get(sayac).getCalisansoyadi());
+        txttelefon.setText(ck.get(sayac).getCalisantelefon());
+    }//GEN-LAST:event_btnileriActionPerformed
+
+    private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btncikisActionPerformed
 
     /**
      * @param args the command line arguments

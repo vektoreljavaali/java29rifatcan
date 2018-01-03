@@ -9,6 +9,7 @@ package Modeller;
  *
  * @author rbarka
  */
-public class ModelGenelRaporlar {
-    
+public class ModelGenelRaporlar 
+{
+   private String tarih;
 }

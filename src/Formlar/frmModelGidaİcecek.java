@@ -5,12 +5,19 @@
  */
 package Formlar;
 
+import Modeller.ModelGidaİcecek;
+import java.util.ArrayList;
+import javax.swing.JFrame;
+
 /**
  *
  * @author rbarka
  */
 public class frmModelGidaİcecek extends javax.swing.JFrame {
-
+    
+    ArrayList<Modeller.ModelGidaİcecek> gidaicecek = new ArrayList<>();
+    Modeller.ModelGidaİcecek tmpgidaicecek;
+    
     /**
      * Creates new form frmModelGidaİcecek
      */
@@ -34,20 +41,20 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        txtadi = new javax.swing.JTextField();
+        txtkalori = new javax.swing.JTextField();
+        txtprotein = new javax.swing.JTextField();
+        txtkarbonhidrat = new javax.swing.JTextField();
+        txtyag = new javax.swing.JTextField();
+        txtmineral = new javax.swing.JTextField();
+        txtsekerorani = new javax.swing.JTextField();
         btnyenikayit = new javax.swing.JButton();
-        bntkaydet = new javax.swing.JButton();
+        btnkaydet = new javax.swing.JButton();
         btnduzenle = new javax.swing.JButton();
         btnsil = new javax.swing.JButton();
         btncikis = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("GIDA - İÇECEK FORMU");
 
         jLabel1.setText("Adı");
@@ -64,28 +71,38 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
 
         jLabel7.setText("Şeker Oranı");
 
-        jTextField2.setToolTipText("");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtkalori.setToolTipText("");
+        txtkalori.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtkaloriActionPerformed(evt);
             }
         });
 
-        jTextField3.setToolTipText("");
+        txtprotein.setToolTipText("");
 
-        jTextField4.setToolTipText("");
+        txtkarbonhidrat.setToolTipText("");
 
-        jTextField5.setToolTipText("");
+        txtyag.setToolTipText("");
 
-        jTextField6.setToolTipText("");
+        txtmineral.setToolTipText("");
 
-        jTextField7.setToolTipText("");
+        txtsekerorani.setToolTipText("");
 
         btnyenikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\yenikayit.png")); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnyenikayitActionPerformed(evt);
+            }
+        });
 
-        bntkaydet.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
-        bntkaydet.setText("Kaydet");
+        btnkaydet.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
+        btnkaydet.setText("Kaydet");
+        btnkaydet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkaydetActionPerformed(evt);
+            }
+        });
 
         btnduzenle.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\düzenle.png")); // NOI18N
         btnduzenle.setText("Düzenle");
@@ -121,17 +138,17 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField3)
-                                .addComponent(jTextField4)
-                                .addComponent(jTextField5)
-                                .addComponent(jTextField6)
-                                .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
-                                .addComponent(jTextField2))
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)))
+                                .addComponent(txtprotein)
+                                .addComponent(txtkarbonhidrat)
+                                .addComponent(txtyag)
+                                .addComponent(txtmineral)
+                                .addComponent(txtsekerorani, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
+                                .addComponent(txtkalori))
+                            .addComponent(txtadi, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(bntkaydet, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnkaydet, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnduzenle, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -145,35 +162,35 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtadi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtkalori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtprotein, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtkarbonhidrat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtyag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtmineral, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtsekerorani, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnyenikayit)
-                    .addComponent(bntkaydet)
+                    .addComponent(btnkaydet)
                     .addComponent(btnduzenle)
                     .addComponent(btnsil))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -185,12 +202,50 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btncikisActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtkaloriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtkaloriActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtkaloriActionPerformed
+
+    private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
+        btnyenikayit.setEnabled(false);
+        btnkaydet.setEnabled(true);
+        btnduzenle.setEnabled(false);
+        btnsil.setEnabled(false);
+        
+        txtadi.setText("");
+        txtkalori.setText("");
+        txtkarbonhidrat.setText("");
+        txtmineral.setText("");
+        txtprotein.setText("");
+        txtsekerorani.setText("");
+        txtyag.setText("");   
+    }//GEN-LAST:event_btnyenikayitActionPerformed
+
+    private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed
+        tmpgidaicecek = new ModelGidaİcecek();
+        tmpgidaicecek.setAdi(txtadi.getText());
+        tmpgidaicecek.setKalori(txtkalori.getText());
+        tmpgidaicecek.setKarbonhidrat(txtkarbonhidrat.getText());
+        tmpgidaicecek.setMineral(txtmineral.getText());
+        tmpgidaicecek.setProtein(txtprotein.getText());
+        tmpgidaicecek.setYag(txtyag.getText());
+        
+        btnyenikayit.setEnabled(true);
+        btnkaydet.setEnabled(false);
+        btnduzenle.setEnabled(true);
+        btnsil.setEnabled(true);
+        
+        txtadi.setText("");
+        txtkalori.setText("");
+        txtkarbonhidrat.setText("");
+        txtmineral.setText("");
+        txtprotein.setText("");
+        txtsekerorani.setText("");
+        txtyag.setText("");   
+    }//GEN-LAST:event_btnkaydetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,9 +283,9 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bntkaydet;
     private javax.swing.JButton btncikis;
     private javax.swing.JButton btnduzenle;
+    private javax.swing.JButton btnkaydet;
     private javax.swing.JButton btnsil;
     private javax.swing.JButton btnyenikayit;
     private javax.swing.JLabel jLabel1;
@@ -240,12 +295,12 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField txtadi;
+    private javax.swing.JTextField txtkalori;
+    private javax.swing.JTextField txtkarbonhidrat;
+    private javax.swing.JTextField txtmineral;
+    private javax.swing.JTextField txtprotein;
+    private javax.swing.JTextField txtsekerorani;
+    private javax.swing.JTextField txtyag;
     // End of variables declaration//GEN-END:variables
 }

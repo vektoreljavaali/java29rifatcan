@@ -5,12 +5,16 @@
  */
 package Formlar;
 
+import Modeller.ModelUyelikKayit;
+import java.util.ArrayList;
+
 /**
  *
  * @author rbarka
  */
 public class frmModelUyelikKayit extends javax.swing.JFrame {
-
+    ArrayList<Modeller.ModelUyelikKayit> uk = new ArrayList<>();
+    Modeller.ModelUyelikKayit tmpuyelikkayit;
     /**
      * Creates new form frmModelUyelikKayit
      */
@@ -27,22 +31,191 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtmusteri = new javax.swing.JTextField();
+        txtsporsalonu = new javax.swing.JTextField();
+        txtcalisanlar = new javax.swing.JTextField();
+        txtegitici = new javax.swing.JTextField();
+        txtaletler = new javax.swing.JTextField();
+        txtgidaicecek = new javax.swing.JTextField();
+        txtegitimkarti = new javax.swing.JTextField();
+        btnyenikayit = new javax.swing.JButton();
+        btnkaydet = new javax.swing.JButton();
+        btnduzenle = new javax.swing.JButton();
+        btnsil = new javax.swing.JButton();
+        btncikis = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("ÜYELİK KARTI");
+
+        jLabel1.setText("Müşteri");
+
+        jLabel2.setText("Spor Salonu");
+
+        jLabel3.setText("Çalışanlar");
+
+        jLabel4.setText("Eğitici");
+
+        jLabel5.setText("Aletler");
+
+        jLabel6.setText("Gıda - İçecek");
+
+        jLabel7.setText("Eğitim Kartı");
+
+        btnyenikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\yenikayit.png")); // NOI18N
+        btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnyenikayitActionPerformed(evt);
+            }
+        });
+
+        btnkaydet.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
+        btnkaydet.setText("Kaydet");
+        btnkaydet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkaydetActionPerformed(evt);
+            }
+        });
+
+        btnduzenle.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\düzenle.png")); // NOI18N
+        btnduzenle.setText("Düzenle");
+
+        btnsil.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\sil.png")); // NOI18N
+        btnsil.setText("Sil");
+
+        btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
+        btncikis.setText("Çıkış");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtmusteri)
+                            .addComponent(txtsporsalonu)
+                            .addComponent(txtegitimkarti, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                            .addComponent(txtgidaicecek)
+                            .addComponent(txtaletler)
+                            .addComponent(txtegitici)
+                            .addComponent(txtcalisanlar))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnyenikayit)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnkaydet)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnduzenle)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnsil, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btncikis)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtmusteri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtsporsalonu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtcalisanlar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtegitici, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtaletler, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtgidaicecek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(txtegitimkarti, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnyenikayit)
+                    .addComponent(btnkaydet)
+                    .addComponent(btnduzenle)
+                    .addComponent(btnsil))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btncikis)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
+        btnyenikayit.setEnabled(false);
+        btnkaydet.setEnabled(true);
+        btnduzenle.setEnabled(false);
+        btnsil.setEnabled(false);
+        
+        txtaletler.setText("");
+        txtcalisanlar.setText("");
+        txtegitici.setText("");
+        txtegitimkarti.setText("");
+        txtgidaicecek.setText("");
+        txtmusteri.setText("");
+        txtsporsalonu.setText("");
+    }//GEN-LAST:event_btnyenikayitActionPerformed
+
+    private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed
+        tmpuyelikkayit = new ModelUyelikKayit();
+        
+        btnyenikayit.setEnabled(true);
+        btnkaydet.setEnabled(false);
+        btnduzenle.setEnabled(true);
+        btnsil.setEnabled(true);
+        
+        tmpuyelikkayit.setAletler(txtaletler.getText());
+        tmpuyelikkayit.setCalisanlar(txtcalisanlar.getText());
+        tmpuyelikkayit.setEgitici(txtegitici.getText());
+        tmpuyelikkayit.setEgitimkarti(txtegitimkarti.getText());
+        tmpuyelikkayit.setGidaicecek(txtgidaicecek.getText());
+        tmpuyelikkayit.setMusteri(txtmusteri.getText());
+        tmpuyelikkayit.setSporsalonu(txtsporsalonu.getText());
+        
+        txtaletler.setText("");
+        txtcalisanlar.setText("");
+        txtegitici.setText("");
+        txtegitimkarti.setText("");
+        txtgidaicecek.setText("");
+        txtmusteri.setText("");
+        txtsporsalonu.setText("");    
+    }//GEN-LAST:event_btnkaydetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +253,24 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btncikis;
+    private javax.swing.JButton btnduzenle;
+    private javax.swing.JButton btnkaydet;
+    private javax.swing.JButton btnsil;
+    private javax.swing.JButton btnyenikayit;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JTextField txtaletler;
+    private javax.swing.JTextField txtcalisanlar;
+    private javax.swing.JTextField txtegitici;
+    private javax.swing.JTextField txtegitimkarti;
+    private javax.swing.JTextField txtgidaicecek;
+    private javax.swing.JTextField txtmusteri;
+    private javax.swing.JTextField txtsporsalonu;
     // End of variables declaration//GEN-END:variables
 }

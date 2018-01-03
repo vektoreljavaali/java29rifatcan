@@ -5,15 +5,17 @@
  */
 package Formlar;
 
+import Modeller.ModelGenelTakip;
+import java.util.ArrayList;
+
 /**
  *
  * @author rbarka
  */
 public class frmModelGenelTakip extends javax.swing.JFrame {
-
-    /**
-     * Creates new form frmModelGenelTakip
-     */
+    ArrayList<Modeller.ModelGenelTakip> gt = new ArrayList<>();
+    Modeller.ModelGenelTakip tmpgeneltakip;
+    
     public frmModelGenelTakip() {
         initComponents();
     }
@@ -48,7 +50,7 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
         txtvucutkitle = new javax.swing.JFormattedTextField();
         btnhesapla = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Tarih");
         jLabel1.setToolTipText("");
@@ -70,9 +72,19 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
 
         btnyenikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\yenikayit.png")); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnyenikayitActionPerformed(evt);
+            }
+        });
 
         btnkaydet.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
         btnkaydet.setText("Kaydet");
+        btnkaydet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkaydetActionPerformed(evt);
+            }
+        });
 
         btnduzenle.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\düzenle.png")); // NOI18N
         btnduzenle.setText("Düzenle");
@@ -82,11 +94,27 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncikisActionPerformed(evt);
+            }
+        });
+
+        txtkilo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtkiloActionPerformed(evt);
+            }
+        });
 
         txtvucutkitle.setToolTipText("");
 
         btnhesapla.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\images\\hesapla.png")); // NOI18N
         btnhesapla.setText("Hesapla");
+        btnhesapla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnhesaplaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -174,6 +202,52 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtkiloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtkiloActionPerformed
+     
+    }//GEN-LAST:event_txtkiloActionPerformed
+
+    private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
+        btnyenikayit.setEnabled(true);
+        btnkaydet.setEnabled(false);
+        btnduzenle.setEnabled(true);
+        btnsil.setEnabled(true);
+        btnhesapla.setEnabled(true);
+        
+        txttarih.setText("");
+        txtbelcapi.setText("");
+        txtboy.setText("");
+        txtvucutkitle.setText("");
+        txtyagorani.setText("");
+        txtyas.setText("");
+    }//GEN-LAST:event_btnyenikayitActionPerformed
+
+    private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed
+        tmpgeneltakip = new ModelGenelTakip();
+        
+        tmpgeneltakip.setBelcapi(txtbelcapi.getText());
+        tmpgeneltakip.setBoy(txtboy.getText());
+        tmpgeneltakip.setKilo(txtkilo.getText());
+        tmpgeneltakip.setTarih(txttarih.getText());
+        tmpgeneltakip.setVucutkitleendeksi(txtvucutkitle.getText());
+        tmpgeneltakip.setYagorani(txtyagorani.getText());
+        tmpgeneltakip.setYas(txtyas.getText());
+        
+        btnyenikayit.setEnabled(false);
+        btnkaydet.setEnabled(true);
+        btnduzenle.setEnabled(false);
+        btnsil.setEnabled(false);
+        btnhesapla.setEnabled(false);
+        
+    }//GEN-LAST:event_btnkaydetActionPerformed
+
+    private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btncikisActionPerformed
+
+    private void btnhesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhesaplaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnhesaplaActionPerformed
 
     /**
      * @param args the command line arguments

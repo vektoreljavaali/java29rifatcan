@@ -5,12 +5,15 @@
  */
 package Modeller;
 
+
+
 /**
  *
  * @author rbarka
  */
 public class ModelGenelTakip 
 {
+    
     private String tarih;
     private String kilo;
     private String boy;
@@ -74,7 +77,4 @@ public class ModelGenelTakip
     public void setVucutkitleendeksi(String vucutkitleendeksi) {
         this.vucutkitleendeksi = vucutkitleendeksi;
     }
-    
-    
-    
 }

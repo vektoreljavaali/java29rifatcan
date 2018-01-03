@@ -43,7 +43,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
         btnileri = new javax.swing.JButton();
         btncikis = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("MÜŞTERİ TAKİP FORMU");
 
         jLabel1.setText("Müşteri Numarası");
@@ -111,6 +111,11 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncikisActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -191,6 +196,10 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
     private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnyenikayitActionPerformed
+
+    private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btncikisActionPerformed
 
     /**
      * @param args the command line arguments
