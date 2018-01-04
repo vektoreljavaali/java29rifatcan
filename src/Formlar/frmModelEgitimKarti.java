@@ -5,12 +5,16 @@
  */
 package Formlar;
 
+import Modeller.ModelEgitimKarti;
+import java.util.ArrayList;
+
 /**
  *
  * @author rbarka
  */
 public class frmModelEgitimKarti extends javax.swing.JFrame {
-
+    ArrayList<Modeller.ModelEgitimKarti> egitimkarti = new ArrayList<>();
+    Modeller.ModelEgitimKarti tmpegitimkarti;
     /**
      * Creates new form frmModelEgitimKarti
      */
@@ -43,6 +47,12 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("EĞİTİM KARTI");
+
+        txttarih.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttarihActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Tarih");
 
@@ -141,12 +151,39 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
+       btnyenikayit.setEnabled(false);
+       btnkaydet.setEnabled(true);
+       btnduzenle.setEnabled(false);
+       btnsil.setEnabled(false);
        
+       txtaletadi.setText("");
+       txtgun.setText("");
+       txtsaatdakika.setText("");
+       txttarih.setText("");
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed
+       tmpegitimkarti = new ModelEgitimKarti();
        
+       tmpegitimkarti.setGun(txtgun.getText());
+       tmpegitimkarti.setSaatdakika(txtsaatdakika.getText());
+       tmpegitimkarti.setTarih(txttarih.getText());
+       tmpegitimkarti.setSet(txtaletadi.getText());
+       
+       btnyenikayit.setEnabled(true);
+       btnkaydet.setEnabled(false);
+       btnduzenle.setEnabled(true);
+       btnsil.setEnabled(true);
+       
+       txtaletadi.setText("");
+       txtgun.setText("");
+       txtsaatdakika.setText("");
+       txttarih.setText("");
     }//GEN-LAST:event_btnkaydetActionPerformed
+
+    private void txttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttarihActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttarihActionPerformed
 
     /**
      * @param args the command line arguments

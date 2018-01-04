@@ -97,6 +97,9 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JFormattedTextField" name="txttarih">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txttarihActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="txtgun">
     </Component>
