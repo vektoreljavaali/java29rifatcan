@@ -100,6 +100,12 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
             }
         });
 
+        txttarih.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttarihActionPerformed(evt);
+            }
+        });
+
         txtkilo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtkiloActionPerformed(evt);
@@ -107,6 +113,11 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
         });
 
         txtvucutkitle.setToolTipText("");
+        txtvucutkitle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtvucutkitleActionPerformed(evt);
+            }
+        });
 
         btnhesapla.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\images\\hesapla.png")); // NOI18N
         btnhesapla.setText("Hesapla");
@@ -122,7 +133,7 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -133,14 +144,14 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(txtkilo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
+                            .addComponent(txtboy, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtyas, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtyagorani, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtbelcapi, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtvucutkitle)
-                            .addComponent(txtbelcapi)
-                            .addComponent(txtyagorani)
-                            .addComponent(txtyas)
-                            .addComponent(txtboy)
-                            .addComponent(txtkilo)
-                            .addComponent(txttarih)))
+                            .addComponent(txttarih, javax.swing.GroupLayout.Alignment.LEADING)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -148,14 +159,12 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnduzenle)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnsil)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btncikis, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnhesapla)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(btnsil)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btncikis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnhesapla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,12 +251,20 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
     }//GEN-LAST:event_btnkaydetActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_btncikisActionPerformed
 
     private void btnhesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhesaplaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnhesaplaActionPerformed
+
+    private void txtvucutkitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtvucutkitleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtvucutkitleActionPerformed
+
+    private void txttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttarihActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttarihActionPerformed
 
     /**
      * @param args the command line arguments

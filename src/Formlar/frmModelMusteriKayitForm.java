@@ -199,14 +199,14 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
                             .addComponent(jLabel8))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
                             .addComponent(txttckimlik)
                             .addComponent(txtadi)
                             .addComponent(txtsoyadi)
                             .addComponent(txttelefon)
                             .addComponent(txtacilTelefon)
-                            .addComponent(txtdogumtarihi)
-                            .addComponent(jScrollPane1))
+                            .addComponent(txtdogumtarihi, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1)
+                            .addComponent(jScrollPane2))
                         .addGap(97, 97, 97)
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -366,7 +366,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnsilActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_btncikisActionPerformed
 
     /**

@@ -132,29 +132,29 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtprotein)
-                                .addComponent(txtkarbonhidrat)
-                                .addComponent(txtyag)
-                                .addComponent(txtmineral)
-                                .addComponent(txtsekerorani, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
-                                .addComponent(txtkalori))
-                            .addComponent(txtadi, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)))
+                            .addComponent(txtprotein)
+                            .addComponent(txtkarbonhidrat)
+                            .addComponent(txtyag)
+                            .addComponent(txtmineral)
+                            .addComponent(txtsekerorani, javax.swing.GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE)
+                            .addComponent(txtadi, javax.swing.GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE)
+                            .addComponent(txtkalori))
+                        .addGap(0, 0, 0))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnkaydet, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnduzenle, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btncikis, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                    .addComponent(btnsil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(btnduzenle, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btncikis, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+                            .addComponent(btnsil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,7 +202,7 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_btncikisActionPerformed
 
     private void txtkaloriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtkaloriActionPerformed

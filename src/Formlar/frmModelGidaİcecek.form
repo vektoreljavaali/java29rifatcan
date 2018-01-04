@@ -27,7 +27,7 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
@@ -39,16 +39,15 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtprotein" max="32767" attributes="0"/>
-                              <Component id="txtkarbonhidrat" max="32767" attributes="0"/>
-                              <Component id="txtyag" max="32767" attributes="0"/>
-                              <Component id="txtmineral" max="32767" attributes="0"/>
-                              <Component id="txtsekerorani" pref="264" max="32767" attributes="0"/>
-                              <Component id="txtkalori" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="txtadi" pref="264" max="32767" attributes="0"/>
+                          <Component id="txtprotein" max="32767" attributes="0"/>
+                          <Component id="txtkarbonhidrat" max="32767" attributes="0"/>
+                          <Component id="txtyag" max="32767" attributes="0"/>
+                          <Component id="txtmineral" max="32767" attributes="0"/>
+                          <Component id="txtsekerorani" pref="374" max="32767" attributes="0"/>
+                          <Component id="txtadi" pref="374" max="32767" attributes="0"/>
+                          <Component id="txtkalori" alignment="0" max="32767" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="btnyenikayit" min="-2" pref="107" max="-2" attributes="0"/>
@@ -56,12 +55,13 @@
                       <Component id="btnkaydet" min="-2" pref="107" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnduzenle" min="-2" pref="107" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btncikis" pref="107" max="32767" attributes="0"/>
+                          <Component id="btnsil" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btncikis" pref="104" max="32767" attributes="0"/>
-                  <Component id="btnsil" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>

@@ -147,11 +147,11 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txttckimlik)
                             .addComponent(txtadi)
                             .addComponent(txtsoyadi)
-                            .addComponent(txttelefon, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1)))
+                            .addComponent(txttelefon, javax.swing.GroupLayout.DEFAULT_SIZE, 591, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1)
+                            .addComponent(txttckimlik)))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(btncikis, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createSequentialGroup()
@@ -269,7 +269,7 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
     }//GEN-LAST:event_btnileriActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_btncikisActionPerformed
 
     /**

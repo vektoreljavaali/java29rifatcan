@@ -37,7 +37,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="txtiletisim" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtyonetici" alignment="0" pref="201" max="32767" attributes="0"/>
+                          <Component id="txtyonetici" alignment="0" pref="327" max="32767" attributes="0"/>
                           <Component id="txtadres" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtsporsalonuadi" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -164,6 +164,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncikisActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

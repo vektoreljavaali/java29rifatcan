@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
@@ -37,17 +37,17 @@
                           <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtvucutkitle" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtbelcapi" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtyagorani" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtyas" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="txtkilo" alignment="0" pref="394" max="32767" attributes="0"/>
                           <Component id="txtboy" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtkilo" max="32767" attributes="0"/>
+                          <Component id="txtyas" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtyagorani" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtbelcapi" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtvucutkitle" max="32767" attributes="0"/>
                           <Component id="txttarih" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Component id="btnyenikayit" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnkaydet" min="-2" max="-2" attributes="0"/>
@@ -55,17 +55,14 @@
                       <Component id="btnduzenle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnsil" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btncikis" max="32767" attributes="0"/>
+                          <Component id="btnhesapla" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btncikis" alignment="1" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="btnhesapla" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -212,6 +209,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="txttarih">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txttarihActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="txtkilo">
       <Events>
@@ -230,6 +230,9 @@
       <Properties>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtvucutkitleActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnhesapla">
       <Properties>

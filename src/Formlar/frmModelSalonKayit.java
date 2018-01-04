@@ -66,6 +66,11 @@ public class frmModelSalonKayit extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncikisActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,7 +88,7 @@ public class frmModelSalonKayit extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtiletisim)
-                            .addComponent(txtyonetici, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                            .addComponent(txtyonetici, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
                             .addComponent(txtadres)
                             .addComponent(txtsporsalonuadi)))
                     .addGroup(layout.createSequentialGroup()
@@ -130,6 +135,10 @@ public class frmModelSalonKayit extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
+       dispose();
+    }//GEN-LAST:event_btncikisActionPerformed
 
     /**
      * @param args the command line arguments

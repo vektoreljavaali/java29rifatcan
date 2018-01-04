@@ -92,6 +92,11 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncikisActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -111,14 +116,13 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtmusteri)
                             .addComponent(txtsporsalonu)
-                            .addComponent(txtegitimkarti, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                            .addComponent(txtegitimkarti, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
                             .addComponent(txtgidaicecek)
                             .addComponent(txtaletler)
                             .addComponent(txtegitici)
-                            .addComponent(txtcalisanlar))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(txtcalisanlar)
+                            .addComponent(txtmusteri)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -216,6 +220,10 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
         txtmusteri.setText("");
         txtsporsalonu.setText("");    
     }//GEN-LAST:event_btnkaydetActionPerformed
+
+    private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
+        dispose();
+    }//GEN-LAST:event_btncikisActionPerformed
 
     /**
      * @param args the command line arguments

@@ -164,7 +164,7 @@ public class frmModelSporAleti extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_btncikisActionPerformed
 
     /**

@@ -48,6 +48,11 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("EĞİTİM KARTI");
 
+        try {
+            txttarih.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/## - DD/MM/YYYY")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
         txttarih.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txttarihActionPerformed(evt);
@@ -55,6 +60,12 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
         });
 
         jLabel1.setText("Tarih");
+
+        try {
+            txtsaatdakika.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##:## - hh:mm")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
 
         jLabel2.setText("Gün");
 
@@ -86,6 +97,11 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\images\\cikis.png")); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncikisActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -184,6 +200,10 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
     private void txttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttarihActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txttarihActionPerformed
+
+    private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
+        dispose();
+    }//GEN-LAST:event_btncikisActionPerformed
 
     /**
      * @param args the command line arguments

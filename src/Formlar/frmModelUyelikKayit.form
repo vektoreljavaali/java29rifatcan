@@ -39,15 +39,14 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtmusteri" max="32767" attributes="0"/>
                           <Component id="txtsporsalonu" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtegitimkarti" alignment="0" pref="214" max="32767" attributes="0"/>
+                          <Component id="txtegitimkarti" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Component id="txtgidaicecek" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtaletler" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtegitici" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtcalisanlar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtmusteri" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="btnyenikayit" min="-2" max="-2" attributes="0"/>
@@ -214,6 +213,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncikisActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

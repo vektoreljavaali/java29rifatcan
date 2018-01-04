@@ -133,11 +133,11 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtmusteriNumarasi)
                             .addComponent(txttarih)
                             .addComponent(txtdurum)
                             .addComponent(txtgirissaati)
-                            .addComponent(txtcikissaati, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)))
+                            .addComponent(txtcikissaati, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
+                            .addComponent(txtmusteriNumarasi)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -198,7 +198,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_btncikisActionPerformed
 
     /**
