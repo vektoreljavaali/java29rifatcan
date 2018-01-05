@@ -100,17 +100,33 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
             }
         });
 
+        try {
+            txttarih.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/#### - DD/MM/YYYY")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
         txttarih.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txttarihActionPerformed(evt);
             }
         });
 
+        try {
+            txtkilo.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("### Kg")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
         txtkilo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtkiloActionPerformed(evt);
             }
         });
+
+        try {
+            txtboy.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("### cm")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
 
         txtvucutkitle.setToolTipText("");
         txtvucutkitle.addActionListener(new java.awt.event.ActionListener() {
@@ -145,13 +161,13 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(txtkilo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
+                            .addComponent(txtkilo, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtboy, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtyas, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtyagorani, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtbelcapi, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtvucutkitle)
-                            .addComponent(txttarih, javax.swing.GroupLayout.Alignment.LEADING)))
+                            .addComponent(txttarih, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

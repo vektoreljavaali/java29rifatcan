@@ -65,11 +65,16 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
         }
 
         try {
-            txttarih.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##-##-#### / MM-DD-YYYY")));
+            txttarih.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/#### - MM/DD/YYYY")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
         txttarih.setToolTipText("");
+        txttarih.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttarihActionPerformed(evt);
+            }
+        });
 
         txtdurum.setToolTipText("");
         txtdurum.addActionListener(new java.awt.event.ActionListener() {
@@ -200,6 +205,10 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
         dispose();
     }//GEN-LAST:event_btncikisActionPerformed
+
+    private void txttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttarihActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttarihActionPerformed
 
     /**
      * @param args the command line arguments

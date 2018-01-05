@@ -107,11 +107,16 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
         txtacilTelefon.setToolTipText("");
 
         try {
-            txtdogumtarihi.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##-##-#### / MM-DD-YYYY")));
+            txtdogumtarihi.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/#### - MM/DD/YYYY")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
         txtdogumtarihi.setToolTipText("");
+        txtdogumtarihi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdogumtarihiActionPerformed(evt);
+            }
+        });
 
         txtadi.setToolTipText("");
 
@@ -368,6 +373,10 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
         dispose();
     }//GEN-LAST:event_btncikisActionPerformed
+
+    private void txtdogumtarihiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdogumtarihiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtdogumtarihiActionPerformed
 
     /**
      * @param args the command line arguments

@@ -49,7 +49,7 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
         setTitle("EĞİTİM KARTI");
 
         try {
-            txttarih.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/## - DD/MM/YYYY")));
+            txttarih.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/#### - DD/MM/YYYY")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }

@@ -40,10 +40,10 @@ public class frmModelSporAleti extends javax.swing.JFrame {
         btncikis = new javax.swing.JButton();
         txtsporaletiadi = new javax.swing.JTextField();
         txtkullanimamaci = new javax.swing.JTextField();
-        txtalinistarihi = new javax.swing.JTextField();
         txtkullanimperiyodu = new javax.swing.JTextField();
         txtdurumu = new javax.swing.JTextField();
         txtgarantisi = new javax.swing.JTextField();
+        txtalinistarihi = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("SPOR ALETİ");
@@ -84,6 +84,12 @@ public class frmModelSporAleti extends javax.swing.JFrame {
             }
         });
 
+        try {
+            txtalinistarihi.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/#### - DD/MM/YYYY")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -113,10 +119,10 @@ public class frmModelSporAleti extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtsporaletiadi, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
                                     .addComponent(txtkullanimamaci)
-                                    .addComponent(txtalinistarihi)
                                     .addComponent(txtkullanimperiyodu)
                                     .addComponent(txtdurumu)
-                                    .addComponent(txtgarantisi)))))
+                                    .addComponent(txtgarantisi)
+                                    .addComponent(txtalinistarihi)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(329, 329, 329)
                         .addComponent(btncikis, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)))
@@ -214,7 +220,7 @@ public class frmModelSporAleti extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField txtalinistarihi;
+    private javax.swing.JFormattedTextField txtalinistarihi;
     private javax.swing.JTextField txtdurumu;
     private javax.swing.JTextField txtgarantisi;
     private javax.swing.JTextField txtkullanimamaci;

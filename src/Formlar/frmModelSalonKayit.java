@@ -52,6 +52,12 @@ public class frmModelSalonKayit extends javax.swing.JFrame {
 
         jLabel4.setText("Yönetici");
 
+        try {
+            txtiletisim.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("0 (###) - ### - ## - ##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+
         btnyenikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\yenikayit.png")); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
 
