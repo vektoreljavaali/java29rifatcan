@@ -57,14 +57,14 @@ public class ConnectionOracle
 	String username = "kod";
 	String password = "bpps";
         conn = (ConnectionOracle) DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe");
-        System.out.println("DB Bağlantısı Başarılı.");
+        System.out.println("DB Bağlantısı Başarılı");
     }
     catch(SQLException e) {
         System.out.println("SQL hatasi: " + e.getLocalizedMessage());
     }
     catch(ClassNotFoundException e)
     {
-        System.out.println("DB Bağlantısı Başarısız.");
+        System.out.println("DB Bağlantısı Başarısız");
     }
     }
     

@@ -5,10 +5,7 @@
  */
 package Formlar;
 
-/**
- *
- * @author rbarka
- */
+
 public class frmModelSporAleti extends javax.swing.JFrame {
 
     /**

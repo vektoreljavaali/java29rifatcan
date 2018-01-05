@@ -303,6 +303,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
         txtdogumtarihi.setText("");
         txtpanesaglikdurumu.setText("");
         txtpaneadres.setText("");
+        
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btngeriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngeriActionPerformed

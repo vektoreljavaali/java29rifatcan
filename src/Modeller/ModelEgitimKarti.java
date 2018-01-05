@@ -15,6 +15,7 @@ public class ModelEgitimKarti
     private String gun;
     private String saatdakika;
     private String set;
+    
 
     public String getTarih() {
         return tarih;

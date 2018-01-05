@@ -12,4 +12,5 @@ package Modeller;
 public class ModelGenelRaporlar 
 {
    private String tarih;
+   
 }

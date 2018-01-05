@@ -11,9 +11,7 @@ package Formlar;
  */
 public class frmModelSalonKayit extends javax.swing.JFrame {
 
-    /**
-     * Creates new form frmModelSalonKayit
-     */
+    
     public frmModelSalonKayit() {
         initComponents();
     }

@@ -207,7 +207,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btncikisActionPerformed
 
     private void txttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttarihActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txttarihActionPerformed
 
     /**

@@ -222,6 +222,7 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
         txtprotein.setText("");
         txtsekerorani.setText("");
         txtyag.setText("");   
+        
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed

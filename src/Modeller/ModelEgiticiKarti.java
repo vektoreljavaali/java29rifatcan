@@ -18,6 +18,7 @@ public class ModelEgiticiKarti
     private String adres;
     private String brans;
     private String calismasaati;
+    
 
     public String getTckimlik() {
         return tckimlik;

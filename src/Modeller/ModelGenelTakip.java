@@ -21,6 +21,7 @@ public class ModelGenelTakip
     private String yagorani;
     private String belcapi;
     private String vucutkitleendeksi;
+    
 
     public String getTarih() {
         return tarih;

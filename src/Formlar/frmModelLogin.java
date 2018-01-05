@@ -97,7 +97,7 @@ public class frmModelLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnloginActionPerformed
 
     private void txtusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusernameActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtusernameActionPerformed
 
     /**

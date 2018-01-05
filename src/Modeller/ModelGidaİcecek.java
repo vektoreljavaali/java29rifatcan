@@ -17,6 +17,7 @@ public class ModelGidaİcecek
     private String karbonhidrat;
     private String yag;
     private String mineral;
+    
 
     public String getAdi() {
         return adi;

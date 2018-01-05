@@ -194,6 +194,7 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
         txtgidaicecek.setText("");
         txtmusteri.setText("");
         txtsporsalonu.setText("");
+        
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed

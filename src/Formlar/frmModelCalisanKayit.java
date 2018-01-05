@@ -245,6 +245,7 @@ public class frmModelCalisanKayit extends javax.swing.JFrame {
         txtsoyadi.setText("");
         txttckimlik.setText("");
         txttelefon.setText("");
+        
     }//GEN-LAST:event_btnkayitActionPerformed
 
     private void btngeriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngeriActionPerformed

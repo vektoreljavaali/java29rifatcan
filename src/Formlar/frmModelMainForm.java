@@ -266,6 +266,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
     private void btngenelraporlarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenelraporlarActionPerformed
         frmModelGenelRaporlar genelraporlar = new frmModelGenelRaporlar();
         genelraporlar.setVisible(true);
+        
     }//GEN-LAST:event_btngenelraporlarActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed

@@ -15,6 +15,7 @@ public class ModelSalonKayit
     private String sporsalonuadres;
     private String sporsalonuiletisim;
     private String sporsalonuyoneticisi;
+    
 
     public String getSporsalonuadi() {
         return sporsalonuadi;

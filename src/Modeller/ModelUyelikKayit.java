@@ -18,6 +18,7 @@ public class ModelUyelikKayit
     private String aletler;
     private String gidaicecek;
     private String egitimkarti;
+    
 
     public String getMusteri() {
         return musteri;

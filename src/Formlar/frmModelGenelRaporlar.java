@@ -146,6 +146,7 @@ public class frmModelGenelRaporlar extends javax.swing.JFrame {
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
         dispose();
+        
     }//GEN-LAST:event_btncikisActionPerformed
 
     /**

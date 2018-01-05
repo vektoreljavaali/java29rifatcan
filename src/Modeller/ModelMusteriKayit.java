@@ -15,6 +15,7 @@ public class ModelMusteriKayit
     private String musteriDougumTarihi;
     private String musteriSaglikDurumu;
     private String musteriAdres;
+    
 
     public String getMusteriTckimlik() {
         return musteriTckimlik;
