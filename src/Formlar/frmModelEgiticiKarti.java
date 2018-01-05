@@ -203,7 +203,6 @@ public class frmModelEgiticiKarti extends javax.swing.JFrame {
         txtsoyadi.setText("");
         txttckimlik.setText("");
         txttelefon.setText("");
-        
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed
