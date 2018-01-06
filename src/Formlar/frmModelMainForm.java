@@ -47,7 +47,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("ANA SAYFA");
 
-        btnmusterikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\musteriKayit.png")); // NOI18N
+        btnmusterikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/musteriKayit.png"))); // NOI18N
         btnmusterikayit.setText("Müşteri Kayıt");
         btnmusterikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,7 +55,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btnuyelikkayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\uyelikkarti.png")); // NOI18N
+        btnuyelikkayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/uyelikkarti.png"))); // NOI18N
         btnuyelikkayit.setText("Üyelik Kayıt");
         btnuyelikkayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,7 +63,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btnegitimkarti.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\egitimkarti.png")); // NOI18N
+        btnegitimkarti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/egitimkarti.png"))); // NOI18N
         btnegitimkarti.setText("Eğitim Kartı");
         btnegitimkarti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +71,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btnsalonkayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\spor_salonu_kayit.png")); // NOI18N
+        btnsalonkayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spor_salonu_kayit.png"))); // NOI18N
         btnsalonkayit.setText("Salon Kayıt");
         btnsalonkayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +79,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btnegiticikarti.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\egitici_karti.png")); // NOI18N
+        btnegiticikarti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/egitici_karti.png"))); // NOI18N
         btnegiticikarti.setText("Eğitici Kartı");
         btnegiticikarti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +87,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btnsporaletikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\spor_aletleri.png")); // NOI18N
+        btnsporaletikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spor_aletleri.png"))); // NOI18N
         btnsporaletikayit.setText("Spor Aleti Kayıt");
         btnsporaletikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +95,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btngidaicecek.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\gıda_icecek.png")); // NOI18N
+        btngidaicecek.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gıda_icecek.png"))); // NOI18N
         btngidaicecek.setText("Gıda - İçecek Kayıt");
         btngidaicecek.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +103,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btncalisankayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\calisan_kayit.png")); // NOI18N
+        btncalisankayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calisan_kayit.png"))); // NOI18N
         btncalisankayit.setText("Çalışan Kayıt");
         btncalisankayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +111,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btnmusteritakipkarti.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\musteri_takip_formu.png")); // NOI18N
+        btnmusteritakipkarti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/musteri_takip_formu.png"))); // NOI18N
         btnmusteritakipkarti.setText("Müşteri Takip Kartı");
         btnmusteritakipkarti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btngenelraporlar.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\genel_raporlar.png")); // NOI18N
+        btngenelraporlar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/genel_raporlar.png"))); // NOI18N
         btngenelraporlar.setText("Genel Raporlar");
         btngenelraporlar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,7 +127,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
             }
         });
 
-        btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
+        btncikis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cikis.png"))); // NOI18N
         btncikis.setText("Çıkış");
         btncikis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,7 +191,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnmusterikayit.getAccessibleContext().setAccessibleDescription("");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\images\\spor-salonu-secimi.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spor-salonu-secimi.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

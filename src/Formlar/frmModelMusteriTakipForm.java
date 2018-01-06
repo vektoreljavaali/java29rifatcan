@@ -101,7 +101,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
         }
         txtcikissaati.setToolTipText("");
 
-        btnyenikayit.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\yenikayit.png")); // NOI18N
+        btnyenikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/yenikayit.png"))); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
         btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,7 +109,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
             }
         });
 
-        btnkaydet.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
+        btnkaydet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/kayit.png"))); // NOI18N
         btnkaydet.setText("Kaydet");
         btnkaydet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,13 +117,13 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
             }
         });
 
-        btngeri.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\geri_.png")); // NOI18N
+        btngeri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/geri_.png"))); // NOI18N
         btngeri.setText("<<< Geri");
 
-        btnileri.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\ileri.png")); // NOI18N
+        btnileri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ileri.png"))); // NOI18N
         btnileri.setText("İleri >>>");
 
-        btncikis.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\cikis.png")); // NOI18N
+        btncikis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cikis.png"))); // NOI18N
         btncikis.setText("Çıkış");
         btncikis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

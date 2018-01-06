@@ -65,7 +65,7 @@ public class frmModelLogin extends javax.swing.JFrame {
         jPanel3.add(txtpassword);
         txtpassword.setBounds(360, 310, 160, 30);
 
-        btnlogin.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\login_buton.png")); // NOI18N
+        btnlogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login_buton.png"))); // NOI18N
         btnlogin.setText("Login");
         btnlogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,9 +75,9 @@ public class frmModelLogin extends javax.swing.JFrame {
         jPanel3.add(btnlogin);
         btnlogin.setBounds(530, 360, 90, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\login_2.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login_2.png"))); // NOI18N
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(0, 0, 626, 417);
+        jLabel2.setBounds(0, 0, 630, 420);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

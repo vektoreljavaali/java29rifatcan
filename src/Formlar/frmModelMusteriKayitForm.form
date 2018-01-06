@@ -69,7 +69,7 @@
                       <Component id="btnduzenle" min="-2" pref="107" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btncikis" pref="99" max="32767" attributes="0"/>
+                          <Component id="btncikis" max="32767" attributes="0"/>
                           <Component id="btnsil" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -257,7 +257,7 @@
     <Component class="javax.swing.JButton" name="btnyenikayit">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\yenikayit.png"/>
+          <Image iconType="3" name="/images/yenikayit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Yeni Kay&#x131;t"/>
       </Properties>
@@ -268,7 +268,7 @@
     <Component class="javax.swing.JButton" name="btnkaydet">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\kayit.png"/>
+          <Image iconType="3" name="/images/kayit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Kaydet"/>
       </Properties>
@@ -279,7 +279,7 @@
     <Component class="javax.swing.JButton" name="btngeri">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\geri_.png"/>
+          <Image iconType="3" name="/images/geri_.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&lt;&lt;&lt; Geri"/>
       </Properties>
@@ -290,7 +290,7 @@
     <Component class="javax.swing.JButton" name="btnileri">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\ileri.png"/>
+          <Image iconType="3" name="/images/ileri.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#x130;leri &gt;&gt;&gt;"/>
       </Properties>
@@ -301,7 +301,7 @@
     <Component class="javax.swing.JButton" name="btncikis">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\cikis.png"/>
+          <Image iconType="3" name="/images/cikis.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
       </Properties>
@@ -314,14 +314,14 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\musteri_karti_resim.png"/>
+          <Image iconType="3" name="/images/musteri_karti_resim.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnduzenle">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\d&#xfc;zenle.png"/>
+          <Image iconType="3" name="/images/d&#xfc;zenle.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="D&#xfc;zenle"/>
       </Properties>
@@ -332,7 +332,7 @@
     <Component class="javax.swing.JButton" name="btnsil">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\rbarka.INNOVA\Documents\NetBeansProjects\SporMerkeziUygulamas&#x131;\src\images\sil.png"/>
+          <Image iconType="3" name="/images/sil.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Sil"/>
       </Properties>
