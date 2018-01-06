@@ -6,7 +6,6 @@
 package Formlar;
 
 import Modeller.ModelLogin;
-import java.util.ArrayList;
 
 /**
  *
@@ -77,7 +76,7 @@ public class frmModelLogin extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login_2.png"))); // NOI18N
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(0, 0, 630, 420);
+        jLabel2.setBounds(0, 0, 626, 417);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,10 +139,8 @@ public class frmModelLogin extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new frmModelLogin().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new frmModelLogin().setVisible(true);
         });
     }
 

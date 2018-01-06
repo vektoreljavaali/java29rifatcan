@@ -7,12 +7,6 @@ package DBConnections;
 
 import java.sql.DriverManager;
 import java.sql.*;
-import java.sql.Connection;
-import oracle.jdbc.connector.OracleConnectionManager;
-import oracle.jdbc.OracleDriver;
-import oracle.jdbc.driver.OracleConnection;
-import oracle.jdbc.driver.OracleSql;
-import oracle.jdbc.driver.T4CXAConnection;
 
 
 
