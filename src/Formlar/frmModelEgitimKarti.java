@@ -176,6 +176,7 @@ public class frmModelEgitimKarti extends javax.swing.JFrame {
        txtgun.setText("");
        txtsaatdakika.setText("");
        txttarih.setText("");
+       
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed

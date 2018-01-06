@@ -5,12 +5,16 @@
  */
 package Formlar;
 
+import Modeller.ModelMusteriTakip;
+import java.util.ArrayList;
+
 /**
  *
  * @author rbarka
  */
 public class frmModelMusteriTakipForm extends javax.swing.JFrame {
-
+    ArrayList<Modeller.ModelMusteriTakip> musteritakip = new ArrayList<>();
+    Modeller.ModelMusteriTakip tmpmusteritakip;
     /**
      * Creates new form frmModelMusteriTakip
      */
@@ -107,6 +111,11 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
 
         btnkaydet.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\kayit.png")); // NOI18N
         btnkaydet.setText("Kaydet");
+        btnkaydet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkaydetActionPerformed(evt);
+            }
+        });
 
         btngeri.setIcon(new javax.swing.ImageIcon("C:\\Users\\rbarka.INNOVA\\Documents\\NetBeansProjects\\SporMerkeziUygulaması\\src\\images\\geri_.png")); // NOI18N
         btngeri.setText("<<< Geri");
@@ -199,7 +208,16 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
     }//GEN-LAST:event_txtdurumActionPerformed
 
     private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed
-        // TODO add your handling code here:
+        btnyenikayit.setEnabled(false);
+        btnkaydet.setEnabled(true);
+        btngeri.setEnabled(false);
+        btnileri.setEnabled(false);
+        
+        txtcikissaati.setText("");
+        txtdurum.setText("");
+        txtgirissaati.setText("");
+        txtmusteriNumarasi.setText("");
+        txttarih.setText("");
     }//GEN-LAST:event_btnyenikayitActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
@@ -209,6 +227,28 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
     private void txttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttarihActionPerformed
         
     }//GEN-LAST:event_txttarihActionPerformed
+
+    private void btnkaydetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaydetActionPerformed
+        tmpmusteritakip = new ModelMusteriTakip();
+        
+        tmpmusteritakip.setCikisSaati(txtcikissaati.getText());
+        tmpmusteritakip.setDurum(txtdurum.getText());
+        tmpmusteritakip.setGirisSaati(txtgirissaati.getText());
+        tmpmusteritakip.setMusteriNo(txtmusteriNumarasi.getText());
+        tmpmusteritakip.setTarih(txttarih.getText());
+        
+        btnyenikayit.setEnabled(true);
+        btnkaydet.setEnabled(false);
+        btngeri.setEnabled(true);
+        btnileri.setEnabled(true);
+        
+        
+        txtcikissaati.setText("");
+        txtdurum.setText("");
+        txtgirissaati.setText("");
+        txtmusteriNumarasi.setText("");
+        txttarih.setText("");
+    }//GEN-LAST:event_btnkaydetActionPerformed
 
     /**
      * @param args the command line arguments

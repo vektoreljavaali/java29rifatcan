@@ -16,6 +16,7 @@ public class ModelSporAletiKayit
     private String durumu;
     private String bakimzamani;
     
+    
 
     public String getSporaletiadi() {
         return sporaletiadi;

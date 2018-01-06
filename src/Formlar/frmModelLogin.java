@@ -5,6 +5,7 @@
  */
 package Formlar;
 
+import Modeller.ModelLogin;
 import java.util.ArrayList;
 
 /**
@@ -12,7 +13,7 @@ import java.util.ArrayList;
  * @author rbarka
  */
 public class frmModelLogin extends javax.swing.JFrame {
-   
+   Modeller.ModelLogin tmplogin;
     /**
      * Creates new form frmModelLogin
      */
@@ -93,7 +94,18 @@ public class frmModelLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
-   
+        tmplogin = new ModelLogin();
+        
+        tmplogin.setUsername(txtusername.getText());
+        tmplogin.setPassword(txtpassword.getSelectedText());
+        
+       
+        txtusername.setText("");
+        txtpassword.setText("");
+        
+        frmModelMainForm mainform = new frmModelMainForm();
+        mainform.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnloginActionPerformed
 
     private void txtusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusernameActionPerformed

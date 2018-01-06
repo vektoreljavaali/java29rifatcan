@@ -226,6 +226,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
     private void btnmusteritakipkartiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmusteritakipkartiActionPerformed
         frmModelMusteriTakipForm musteritakip = new frmModelMusteriTakipForm();
         musteritakip.setVisible(true);
+        
     }//GEN-LAST:event_btnmusteritakipkartiActionPerformed
 
     private void btnuyelikkayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnuyelikkayitActionPerformed

@@ -8,10 +8,7 @@ package Formlar;
 import Modeller.ModelUyelikKayit;
 import java.util.ArrayList;
 
-/**
- *
- * @author rbarka
- */
+
 public class frmModelUyelikKayit extends javax.swing.JFrame {
     ArrayList<Modeller.ModelUyelikKayit> uk = new ArrayList<>();
     Modeller.ModelUyelikKayit tmpuyelikkayit;

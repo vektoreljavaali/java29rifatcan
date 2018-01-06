@@ -17,6 +17,7 @@ public class ModelCalisanKayit
     private String calisantelefon;
     private String calisanadres;
     
+    
 
     public String getCalisantckimlik() {
         return calisantckimlik;

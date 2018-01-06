@@ -10,10 +10,7 @@ import java.util.ArrayList;
 import javax.swing.JFormattedTextField;
 import javax.swing.text.MaskFormatter;
 
-/**
- *
- * @author rbarka
- */
+
 public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
     ArrayList<Modeller.ModelMusteriKayit> almusteri = new ArrayList<>();

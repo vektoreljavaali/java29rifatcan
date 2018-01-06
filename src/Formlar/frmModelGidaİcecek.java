@@ -206,7 +206,7 @@ public class frmModelGidaİcecek extends javax.swing.JFrame {
     }//GEN-LAST:event_btncikisActionPerformed
 
     private void txtkaloriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtkaloriActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtkaloriActionPerformed
 
     private void btnyenikayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnyenikayitActionPerformed

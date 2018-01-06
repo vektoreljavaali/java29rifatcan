@@ -17,6 +17,7 @@ public class ModelMusteriTakip
     private String girisSaati;
     private String cikisSaati;
     
+    
 
     public String getMusteriNo() {
         return musteriNo;

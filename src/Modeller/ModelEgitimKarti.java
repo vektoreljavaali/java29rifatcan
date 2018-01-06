@@ -16,6 +16,7 @@ public class ModelEgitimKarti
     private String saatdakika;
     private String set;
     
+    
 
     public String getTarih() {
         return tarih;

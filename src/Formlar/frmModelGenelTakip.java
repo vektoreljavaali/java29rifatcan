@@ -265,6 +265,7 @@ public class frmModelGenelTakip extends javax.swing.JFrame {
         btnsil.setEnabled(false);
         btnhesapla.setEnabled(false);
         
+        
     }//GEN-LAST:event_btnkaydetActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed

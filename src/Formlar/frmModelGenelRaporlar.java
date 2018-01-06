@@ -141,7 +141,7 @@ public class frmModelGenelRaporlar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jFormattedTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField4ActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_jFormattedTextField4ActionPerformed
 
     private void btncikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncikisActionPerformed
