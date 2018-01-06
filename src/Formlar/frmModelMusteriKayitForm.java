@@ -125,6 +125,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btnyenikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/yenikayit.png"))); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnyenikayitActionPerformed(evt);
@@ -133,6 +134,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btnkaydet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/kayit.png"))); // NOI18N
         btnkaydet.setText("Kaydet");
+        btnkaydet.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnkaydet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnkaydetActionPerformed(evt);
@@ -141,6 +143,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btngeri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/geri_.png"))); // NOI18N
         btngeri.setText("<<< Geri");
+        btngeri.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btngeri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btngeriActionPerformed(evt);
@@ -149,6 +152,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btnileri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ileri.png"))); // NOI18N
         btnileri.setText("İleri >>>");
+        btnileri.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnileri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnileriActionPerformed(evt);
@@ -157,6 +161,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cikis.png"))); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btncikis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncikisActionPerformed(evt);
@@ -167,6 +172,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btnduzenle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/düzenle.png"))); // NOI18N
         btnduzenle.setText("Düzenle");
+        btnduzenle.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnduzenle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnduzenleActionPerformed(evt);
@@ -175,6 +181,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
 
         btnsil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sil.png"))); // NOI18N
         btnsil.setText("Sil");
+        btnsil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnsil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsilActionPerformed(evt);
@@ -213,7 +220,7 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel9)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -227,8 +234,9 @@ public class frmModelMusteriKayitForm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btncikis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnsil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnsil, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

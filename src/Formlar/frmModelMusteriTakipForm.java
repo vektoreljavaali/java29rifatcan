@@ -103,6 +103,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
 
         btnyenikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/yenikayit.png"))); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnyenikayitActionPerformed(evt);
@@ -111,6 +112,7 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
 
         btnkaydet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/kayit.png"))); // NOI18N
         btnkaydet.setText("Kaydet");
+        btnkaydet.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnkaydet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnkaydetActionPerformed(evt);
@@ -119,12 +121,15 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
 
         btngeri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/geri_.png"))); // NOI18N
         btngeri.setText("<<< Geri");
+        btngeri.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnileri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ileri.png"))); // NOI18N
         btnileri.setText("İleri >>>");
+        btnileri.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btncikis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cikis.png"))); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btncikis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncikisActionPerformed(evt);
@@ -147,11 +152,11 @@ public class frmModelMusteriTakipForm extends javax.swing.JFrame {
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txttarih)
+                            .addComponent(txttarih, javax.swing.GroupLayout.DEFAULT_SIZE, 348, Short.MAX_VALUE)
                             .addComponent(txtdurum)
                             .addComponent(txtgirissaati)
-                            .addComponent(txtcikissaati, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
-                            .addComponent(txtmusteriNumarasi)))
+                            .addComponent(txtmusteriNumarasi)
+                            .addComponent(txtcikissaati)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

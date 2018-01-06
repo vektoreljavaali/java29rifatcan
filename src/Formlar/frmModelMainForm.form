@@ -114,6 +114,9 @@
               <Image iconType="3" name="/images/musteriKayit.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="M&#xfc;&#x15f;teri Kay&#x131;t"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
@@ -128,6 +131,9 @@
               <Image iconType="3" name="/images/uyelikkarti.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#xdc;yelik Kay&#x131;t"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnuyelikkayitActionPerformed"/>
@@ -139,6 +145,9 @@
               <Image iconType="3" name="/images/egitimkarti.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="E&#x11f;itim Kart&#x131;"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnegitimkartiActionPerformed"/>
@@ -150,6 +159,9 @@
               <Image iconType="3" name="/images/spor_salonu_kayit.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salon Kay&#x131;t"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsalonkayitActionPerformed"/>
@@ -163,6 +175,9 @@
               <Image iconType="3" name="/images/egitici_karti.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="E&#x11f;itici Kart&#x131;"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnegiticikartiActionPerformed"/>
@@ -174,6 +189,9 @@
               <Image iconType="3" name="/images/spor_aletleri.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Spor Aleti Kay&#x131;t"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsporaletikayitActionPerformed"/>
@@ -185,6 +203,9 @@
               <Image iconType="3" name="/images/g&#x131;da_icecek.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="G&#x131;da - &#x130;&#xe7;ecek Kay&#x131;t"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btngidaicecekActionPerformed"/>
@@ -196,6 +217,9 @@
               <Image iconType="3" name="/images/calisan_kayit.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#xc7;al&#x131;&#x15f;an Kay&#x131;t"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncalisankayitActionPerformed"/>
@@ -209,6 +233,9 @@
               <Image iconType="3" name="/images/musteri_takip_formu.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="M&#xfc;&#x15f;teri Takip Kart&#x131;"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmusteritakipkartiActionPerformed"/>
@@ -220,6 +247,9 @@
               <Image iconType="3" name="/images/genel_raporlar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Genel Raporlar"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btngenelraporlarActionPerformed"/>
@@ -231,6 +261,9 @@
               <Image iconType="3" name="/images/cikis.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncikisActionPerformed"/>

@@ -49,6 +49,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnmusterikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/musteriKayit.png"))); // NOI18N
         btnmusterikayit.setText("Müşteri Kayıt");
+        btnmusterikayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnmusterikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmusterikayitActionPerformed(evt);
@@ -57,6 +58,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnuyelikkayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/uyelikkarti.png"))); // NOI18N
         btnuyelikkayit.setText("Üyelik Kayıt");
+        btnuyelikkayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnuyelikkayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnuyelikkayitActionPerformed(evt);
@@ -65,6 +67,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnegitimkarti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/egitimkarti.png"))); // NOI18N
         btnegitimkarti.setText("Eğitim Kartı");
+        btnegitimkarti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnegitimkarti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnegitimkartiActionPerformed(evt);
@@ -73,6 +76,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnsalonkayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spor_salonu_kayit.png"))); // NOI18N
         btnsalonkayit.setText("Salon Kayıt");
+        btnsalonkayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnsalonkayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalonkayitActionPerformed(evt);
@@ -81,6 +85,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnegiticikarti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/egitici_karti.png"))); // NOI18N
         btnegiticikarti.setText("Eğitici Kartı");
+        btnegiticikarti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnegiticikarti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnegiticikartiActionPerformed(evt);
@@ -89,6 +94,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnsporaletikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spor_aletleri.png"))); // NOI18N
         btnsporaletikayit.setText("Spor Aleti Kayıt");
+        btnsporaletikayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnsporaletikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsporaletikayitActionPerformed(evt);
@@ -97,6 +103,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btngidaicecek.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gıda_icecek.png"))); // NOI18N
         btngidaicecek.setText("Gıda - İçecek Kayıt");
+        btngidaicecek.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btngidaicecek.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btngidaicecekActionPerformed(evt);
@@ -105,6 +112,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btncalisankayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calisan_kayit.png"))); // NOI18N
         btncalisankayit.setText("Çalışan Kayıt");
+        btncalisankayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btncalisankayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncalisankayitActionPerformed(evt);
@@ -113,6 +121,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btnmusteritakipkarti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/musteri_takip_formu.png"))); // NOI18N
         btnmusteritakipkarti.setText("Müşteri Takip Kartı");
+        btnmusteritakipkarti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnmusteritakipkarti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmusteritakipkartiActionPerformed(evt);
@@ -121,6 +130,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btngenelraporlar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/genel_raporlar.png"))); // NOI18N
         btngenelraporlar.setText("Genel Raporlar");
+        btngenelraporlar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btngenelraporlar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btngenelraporlarActionPerformed(evt);
@@ -129,6 +139,7 @@ public class frmModelMainForm extends javax.swing.JFrame {
 
         btncikis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cikis.png"))); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btncikis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncikisActionPerformed(evt);

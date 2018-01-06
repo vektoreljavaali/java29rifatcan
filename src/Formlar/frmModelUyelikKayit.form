@@ -39,13 +39,13 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtsporsalonu" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtegitimkarti" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="txtsporsalonu" alignment="0" pref="360" max="32767" attributes="0"/>
                           <Component id="txtgidaicecek" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtaletler" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtegitici" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtcalisanlar" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtmusteri" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtegitimkarti" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -55,14 +55,13 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnduzenle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnsil" pref="75" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="btncikis" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btncikis" pref="107" max="32767" attributes="0"/>
+                          <Component id="btnsil" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -174,6 +173,9 @@
           <Image iconType="3" name="/images/yenikayit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Yeni Kay&#x131;t"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnyenikayitActionPerformed"/>
@@ -185,6 +187,9 @@
           <Image iconType="3" name="/images/kayit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Kaydet"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnkaydetActionPerformed"/>
@@ -196,6 +201,9 @@
           <Image iconType="3" name="/images/d&#xfc;zenle.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="D&#xfc;zenle"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnsil">
@@ -204,6 +212,9 @@
           <Image iconType="3" name="/images/sil.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Sil"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btncikis">
@@ -212,6 +223,9 @@
           <Image iconType="3" name="/images/cikis.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncikisActionPerformed"/>

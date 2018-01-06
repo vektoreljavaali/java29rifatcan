@@ -24,47 +24,42 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="btnyenikayit" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnkaydet" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnduzenle" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnsil" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtsporaletiadi" alignment="0" pref="282" max="32767" attributes="0"/>
-                                  <Component id="txtkullanimamaci" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtkullanimperiyodu" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtdurumu" max="32767" attributes="0"/>
-                                  <Component id="txtgarantisi" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtalinistarihi" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtsporaletiadi" alignment="0" pref="306" max="32767" attributes="0"/>
+                          <Component id="txtkullanimamaci" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtkullanimperiyodu" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtdurumu" max="32767" attributes="0"/>
+                          <Component id="txtalinistarihi" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtgarantisi" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="329" max="-2" attributes="0"/>
-                      <Component id="btncikis" pref="89" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnyenikayit" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnkaydet" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnduzenle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btncikis" pref="107" max="32767" attributes="0"/>
+                          <Component id="btnsil" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -108,7 +103,7 @@
                   <Component id="btnduzenle" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnsil" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btncikis" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -156,6 +151,9 @@
           <Image iconType="3" name="/images/yenikayit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Yeni Kay&#x131;t"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnkaydet">
@@ -164,6 +162,9 @@
           <Image iconType="3" name="/images/kayit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Kaydet"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnduzenle">
@@ -172,6 +173,9 @@
           <Image iconType="3" name="/images/d&#xfc;zenle.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="D&#xfc;zenle"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnsil">
@@ -180,6 +184,9 @@
           <Image iconType="3" name="/images/sil.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Sil"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btncikis">
@@ -188,6 +195,9 @@
           <Image iconType="3" name="/images/cikis.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncikisActionPerformed"/>

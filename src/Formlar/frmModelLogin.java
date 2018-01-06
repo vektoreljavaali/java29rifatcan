@@ -66,6 +66,7 @@ public class frmModelLogin extends javax.swing.JFrame {
 
         btnlogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login_buton.png"))); // NOI18N
         btnlogin.setText("Login");
+        btnlogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnlogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnloginActionPerformed(evt);

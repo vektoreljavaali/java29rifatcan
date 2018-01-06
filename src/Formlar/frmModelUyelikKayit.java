@@ -67,6 +67,7 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
 
         btnyenikayit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/yenikayit.png"))); // NOI18N
         btnyenikayit.setText("Yeni Kayıt");
+        btnyenikayit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnyenikayit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnyenikayitActionPerformed(evt);
@@ -75,6 +76,7 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
 
         btnkaydet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/kayit.png"))); // NOI18N
         btnkaydet.setText("Kaydet");
+        btnkaydet.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnkaydet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnkaydetActionPerformed(evt);
@@ -83,12 +85,15 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
 
         btnduzenle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/düzenle.png"))); // NOI18N
         btnduzenle.setText("Düzenle");
+        btnduzenle.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnsil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sil.png"))); // NOI18N
         btnsil.setText("Sil");
+        btnsil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btncikis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cikis.png"))); // NOI18N
         btncikis.setText("Çıkış");
+        btncikis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btncikis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncikisActionPerformed(evt);
@@ -113,13 +118,13 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtsporsalonu)
-                            .addComponent(txtegitimkarti, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
+                            .addComponent(txtsporsalonu, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
                             .addComponent(txtgidaicecek)
                             .addComponent(txtaletler)
                             .addComponent(txtegitici)
                             .addComponent(txtcalisanlar)
-                            .addComponent(txtmusteri)))
+                            .addComponent(txtmusteri)
+                            .addComponent(txtegitimkarti)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnyenikayit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -127,11 +132,10 @@ public class frmModelUyelikKayit extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnduzenle)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnsil, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btncikis)))
-                .addContainerGap())
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btncikis, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+                            .addComponent(btnsil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
