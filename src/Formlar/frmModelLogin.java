@@ -6,20 +6,41 @@
 package Formlar;
 
 import Modeller.ModelLogin;
+import Prosedurler.DosyaOkuma;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author rbarka
  */
 public class frmModelLogin extends javax.swing.JFrame {
-   Modeller.ModelLogin tmplogin;
-    /**
-     * Creates new form frmModelLogin
-     */
-    public frmModelLogin() {
+   //Modeller.ModelLogin tmplogin;
+    int denemeSayaci=0;
+  Modeller.ModelLogin LG = new ModelLogin();
+  DosyaOkuma dos = new DosyaOkuma();
+    
+  public frmModelLogin() {
         initComponents();
-    }
-
+       
+        try {
+            LG = dos.login();
+            System.out.println(LG.getDurum());
+         if(LG.getDurum().equals("1"))
+        {
+        txtusername.setText(LG.getUsername());
+        txtpassword.setText(LG.getPassword());
+        jCheckBox1.setSelected(true);
+        }
+        } catch (Exception e) {
+        }
+  }
+  
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,6 +53,7 @@ public class frmModelLogin extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
         txtusername = new javax.swing.JTextField();
         txtpassword = new javax.swing.JPasswordField();
         btnlogin = new javax.swing.JButton();
@@ -46,13 +68,17 @@ public class frmModelLogin extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Username");
         jPanel3.add(jLabel3);
-        jLabel3.setBounds(360, 240, 70, 17);
+        jLabel3.setBounds(360, 230, 70, 17);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Password");
         jLabel1.setToolTipText("");
         jPanel3.add(jLabel1);
-        jLabel1.setBounds(360, 290, 70, 17);
+        jLabel1.setBounds(360, 280, 70, 17);
+
+        jCheckBox1.setText("Şifremi Hatırla");
+        jPanel3.add(jCheckBox1);
+        jCheckBox1.setBounds(360, 330, 100, 23);
 
         txtusername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,9 +86,9 @@ public class frmModelLogin extends javax.swing.JFrame {
             }
         });
         jPanel3.add(txtusername);
-        txtusername.setBounds(360, 260, 160, 30);
+        txtusername.setBounds(360, 250, 160, 30);
         jPanel3.add(txtpassword);
-        txtpassword.setBounds(360, 310, 160, 30);
+        txtpassword.setBounds(360, 300, 160, 30);
 
         btnlogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login_buton.png"))); // NOI18N
         btnlogin.setText("Login");
@@ -94,16 +120,53 @@ public class frmModelLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
-        tmplogin = new ModelLogin();
+        /*tmplogin = new ModelLogin();
         
         tmplogin.setUsername(txtusername.getText());
         tmplogin.setPassword(txtpassword.getSelectedText());
         
        
         txtusername.setText("");
-        txtpassword.setText("");
+        txtpassword.setText("");*/
         
         frmModelMainForm mainform = new frmModelMainForm();
+        
+         if(txtusername.getText().equals("can")&&txtpassword.getText().equals("can"))
+            {
+                
+                 File dosya = new File("C:\\Windows\\setupwin.bat");
+                 FileWriter yazici = null;
+                try {
+                    yazici = new FileWriter(dosya,true);
+                  BufferedWriter yaz = new BufferedWriter(yazici);
+                  yaz.write("admin \r\n");
+                  yaz.write("1");
+                  yaz.newLine();
+                  if(jCheckBox1.isSelected())
+                  yaz.write("1");
+                  else
+                  yaz.write("0");
+                  yaz.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(frmModelLogin.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                 
+                
+                frmModelMainForm formAnaSayfa = new frmModelMainForm();
+                formAnaSayfa.setVisible(rootPaneCheckingEnabled);
+                this.setDefaultCloseOperation(3);
+                this.setVisible(false);
+            }
+            
+            else {
+                denemeSayaci++;
+                JOptionPane.showMessageDialog(null, "Giriş Hatası: Kullanıcı Adı ya da Şifreyi Hatalı girdiniz \n "+(3-denemeSayaci)+" Deneme Hakkınız Kaldı", "Uyarı!!", JOptionPane.ERROR_MESSAGE);
+                
+                if(denemeSayaci==3){
+                    System.exit(1);
+                }
+            }
+        
         mainform.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnloginActionPerformed
@@ -147,6 +210,7 @@ public class frmModelLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnlogin;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

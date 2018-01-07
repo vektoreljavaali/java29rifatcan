@@ -13,6 +13,16 @@ public class ModelLogin
 {
     private String username;
     private String password;
+    private String durum;
+
+    public String getDurum() {
+        return durum;
+    }
+
+    public void setDurum(String durum) {
+        this.durum = durum;
+    }
+    
 
     public String getUsername() {
         return username;
